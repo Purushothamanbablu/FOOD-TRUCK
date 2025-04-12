@@ -118,15 +118,25 @@ h2{
     text-shadow: -2px -2px 30px rgb(255, 255, 255);  
 }
 h3{
-    display: inline-block;
-    margin: 10px 0px;
-    text-shadow: 2px 2px 5px red;
+    display: flex;
+    justify-self: center;
+    margin: 20px 0px;
     position: relative;
-    left: 45%;
     background-color: #000000;
     font-size: 25px;
     text-align: center;
-    box-shadow: 0px 0px 10px #ff0000;
+    
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+h3:hover{
+        background-color: #ff0000;
+        color: #ffffff;
+        box-shadow: 0px 0px 10px #ff0000;
+        border: solid 2px red;
+        cursor: pointer;
 }
 
 ul{
@@ -195,6 +205,25 @@ del {
     padding: 20px;
 }
 
+#startMenu{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
 
-
+}
+#mainMenu{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#interMenu{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#dessertsMenu{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#beveragesMenu{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
